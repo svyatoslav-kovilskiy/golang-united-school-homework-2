@@ -31,7 +31,7 @@ func CalcSquare_(sideLen float64) float64 {
 }
 
 func CalcCircleSquare(radius float64) float64 {
-	S := 2 * math.Pi * math.Pow(radius, 2)
+	S := math.Pi * math.Pow(radius, 2)
 	return S
 }
 
