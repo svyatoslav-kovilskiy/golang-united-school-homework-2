@@ -25,7 +25,7 @@ func CalcTriangleSquare(sideLen float64) float64 {
 	return S
 }
 
-func CalcSquare_(sideLen float64) float64 {
+func CalcRectangleSquare(sideLen float64) float64 {
 	S := math.Pow(sideLen, 2)
 	return S
 }
@@ -37,7 +37,7 @@ func CalcCircleSquare(radius float64) float64 {
 
 func CalcSquare(sideLen float64, sidesNum int) float64 {
 	if sidesNum == 4 {
-		return CalcSquare_(sideLen)
+		return CalcRectangleSquare(sideLen)
 	} else if sidesNum == 3 {
 		return CalcTriangleSquare(sideLen)
 	} else if sidesNum == 0 {
